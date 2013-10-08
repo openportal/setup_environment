@@ -11,6 +11,10 @@ git config --global user.email "roberthintz@stanford.edu"
 
 sudo apt-get install curl
 
+sudo apt-get install nginx-full
+
+sudo rm /etc/nginx/sites-enabled/default
+
 curl -L https://get.rvm.io | bash -s stable --rails
 
 source /home/ubuntu/.rvm/scripts/rvm
