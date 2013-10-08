@@ -25,6 +25,15 @@ sudo apt-get -y --force-yes install curl git-core python-software-properties bui
 
 sudo rm /etc/nginx/sites-enabled/default
 
+sudo rm -rf ~/.rvm
+
+curl -L https://get.rvm.io | bash -s stable --rails
+
+if [[ -a ~/dotfiles || -d ~/dotfiles ]]
+  then
+    rm -rf ~/dotfiles
+fi
+
 git clone https://github.com/rhintz42/dotfiles.git ~/dotfiles
 
 cd ~/dotfiles
