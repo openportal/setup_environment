@@ -41,5 +41,3 @@ cd ~/dotfiles
 bash ~/dotfiles/setup.sh
 
 cd ~
-
-source /home/ubuntu/.rvm/scripts/rvm
