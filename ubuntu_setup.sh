@@ -27,8 +27,6 @@ sudo rm /etc/nginx/sites-enabled/default
 
 curl -L https://get.rvm.io | bash -s stable --rails
 
-source /home/ubuntu/.rvm/scripts/rvm
-
 if [[ -a ~/dotfiles || -d ~/dotfiles ]]
   then
     rm -rf ~/dotfiles
@@ -41,3 +39,5 @@ cd ~/dotfiles
 bash ~/dotfiles/setup.sh
 
 cd ~
+
+source /home/ubuntu/.rvm/scripts/rvm
